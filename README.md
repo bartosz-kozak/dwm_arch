@@ -16,7 +16,7 @@ Changes from the upstream default config:
   - `Super + w` — launch qutebrowser
   - `Super + c` — launch Chromium
 - **System tool shortcuts**:
-  - `Super + n` — launch nmcli (network manager, in terminal)
+  - `Super + n` — launch nmtui (network manager TUI, in terminal)
   - `Super + Shift + b` — launch bluetui (Bluetooth manager, in terminal)
 
 ---
@@ -28,7 +28,7 @@ Changes from the upstream default config:
 - `st` (simple terminal) — default terminal emulator
 - `dmenu` — application launcher
 - `qutebrowser` and/or `chromium` if you want the browser shortcuts to work
-- `nmcli` — network manager CLI (part of NetworkManager)
+- `nmtui` — network manager TUI (part of NetworkManager)
 - `bluetui` — Bluetooth TUI manager
 
 ---
@@ -71,7 +71,7 @@ exec dwm
 | `Super + Shift + Return` | open terminal (st) |
 | `Super + w` | open qutebrowser |
 | `Super + c` | open Chromium |
-| `Super + n` | open nmcli (network manager) |
+| `Super + n` | open nmtui (network manager TUI) |
 | `Super + Shift + b` | open bluetui (Bluetooth manager) |
 | `Super + b` | toggle bar |
 | `Super + j/k` | focus next/prev window |

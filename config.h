@@ -62,7 +62,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "st", NULL };
 static const char *qutebrowsercmd[] = { "qutebrowser", NULL };	/* quterbrowser */
 static const char *chromiumcmd[] = { "chromium", NULL };	/* chromium */
-static const char *nmclicmd[]    = { "st", "-e", "nmcli", NULL };	/* nmcli network manager */
+static const char *nmclicmd[]    = { "st", "-e", "nmtui", NULL };	/* nmtui network manager */
 static const char *bluetuicmd[]  = { "st", "-e", "bluetui", NULL };	/* bluetui bluetooth manager */
 
 static const Key keys[] = {
