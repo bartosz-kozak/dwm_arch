@@ -64,6 +64,10 @@ static const char *qutebrowsercmd[] = { "qutebrowser", NULL };	/* quterbrowser *
 static const char *chromiumcmd[] = { "chromium", NULL };	/* chromium */
 static const char *nmclicmd[]    = { "st", "-e", "nmtui", NULL };	/* nmtui network manager */
 static const char *bluetuicmd[]  = { "st", "-e", "bluetui", NULL };	/* bluetui bluetooth manager */
+static const char *pavucontrolcmd[] = { "pavucontrol", NULL };		/* pavucontrol audio mixer */
+static const char *volup[]   = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "+5%", NULL };
+static const char *voldown[] = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "-5%", NULL };
+static const char *volmute[] = { "pactl", "set-sink-mute",   "@DEFAULT_SINK@", "toggle", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -73,6 +77,10 @@ static const Key keys[] = {
 	{MODKEY,			XK_c,	   spawn,	   {.v = chromiumcmd } },    /* chromiumcmd setup */
 	{MODKEY,			XK_n,	   spawn,	   {.v = nmclicmd } },       /* nmcli network manager */
 	{MODKEY|ShiftMask,		XK_b,	   spawn,	   {.v = bluetuicmd } },     /* bluetui bluetooth manager */
+	{MODKEY,			XK_v,	   spawn,	   {.v = pavucontrolcmd } }, /* pavucontrol audio mixer */
+	{ 0, XF86XK_AudioRaiseVolume,              spawn,          {.v = volup } },
+	{ 0, XF86XK_AudioLowerVolume,              spawn,          {.v = voldown } },
+	{ 0, XF86XK_AudioMute,                     spawn,          {.v = volmute } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },

@@ -18,6 +18,11 @@ Changes from the upstream default config:
 - **System tool shortcuts**:
   - `Super + n` — launch nmtui (network manager TUI, in terminal)
   - `Super + Shift + b` — launch bluetui (Bluetooth manager, in terminal)
+  - `Super + v` — launch pavucontrol (PulseAudio volume control GUI)
+- **Audio controls** (via `pactl`):
+  - `XF86AudioRaiseVolume` — volume +5%
+  - `XF86AudioLowerVolume` — volume -5%
+  - `XF86AudioMute` — toggle mute
 
 ---
 
@@ -30,6 +35,8 @@ Changes from the upstream default config:
 - `qutebrowser` and/or `chromium` if you want the browser shortcuts to work
 - `nmtui` — network manager TUI (part of NetworkManager)
 - `bluetui` — Bluetooth TUI manager
+- `pavucontrol` — PulseAudio volume control GUI
+- `pactl` — PulseAudio CLI (part of PulseAudio/PipeWire)
 
 ---
 
@@ -73,6 +80,10 @@ exec dwm
 | `Super + c` | open Chromium |
 | `Super + n` | open nmtui (network manager TUI) |
 | `Super + Shift + b` | open bluetui (Bluetooth manager) |
+| `Super + v` | open pavucontrol (audio mixer) |
+| `XF86AudioRaiseVolume` | volume +5% |
+| `XF86AudioLowerVolume` | volume -5% |
+| `XF86AudioMute` | toggle mute |
 | `Super + b` | toggle bar |
 | `Super + j/k` | focus next/prev window |
 | `Super + h/l` | resize master area |
