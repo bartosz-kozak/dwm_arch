@@ -15,6 +15,7 @@ Changes from the upstream default config:
 - **Browser shortcuts**:
   - `Super + w` — launch qutebrowser
   - `Super + c` — launch Chromium
+  - `Super + z` — launch Zen Browser
 - **System tool shortcuts**:
   - `Super + n` — launch nmtui (network manager TUI, in terminal)
   - `Super + Shift + b` — launch bluetui (Bluetooth manager, in terminal)
@@ -32,7 +33,7 @@ Changes from the upstream default config:
 - `MesloLGS NF` (or another Nerd Font) installed on your system
 - `st` (simple terminal) — default terminal emulator
 - `dmenu` — application launcher
-- `qutebrowser` and/or `chromium` if you want the browser shortcuts to work
+- `qutebrowser`, `chromium`, and/or `zen-browser` if you want the browser shortcuts to work
 - `nmtui` — network manager TUI (part of NetworkManager)
 - `bluetui` — Bluetooth TUI manager
 - `pavucontrol` — PulseAudio volume control GUI
@@ -78,6 +79,7 @@ exec dwm
 | `Super + Shift + Return` | open terminal (st) |
 | `Super + w` | open qutebrowser |
 | `Super + c` | open Chromium |
+| `Super + z` | open Zen Browser |
 | `Super + n` | open nmtui (network manager TUI) |
 | `Super + Shift + b` | open bluetui (Bluetooth manager) |
 | `Super + v` | open pavucontrol (audio mixer) |
